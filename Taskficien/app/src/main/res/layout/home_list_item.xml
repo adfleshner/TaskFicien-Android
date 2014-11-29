@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingRight="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7.30 AM"
+            android:id="@+id/hl_event_time_tv"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:layout_gravity="center_vertical|right"
+            android:textSize="10dp"
+            android:textColor="#2292E1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 M"
+            android:id="@+id/hl_event_time_amount_tv"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            android:layout_gravity="center_vertical|right"
+            android:textSize="8dp"
+            android:textColor="#ADB0B0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUKA TOKO"
+            android:id="@+id/hl_name_tv"
+            android:layout_gravity="center_vertical|left"
+            android:textColor="#929494" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCHEDULE"
+                android:id="@+id/hl_event_type_tv"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="8dp"
+                android:textColor="#2292E1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2/2"
+                android:id="@+id/hl_task_remaining_tv"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:textSize="8dp"
+                android:textColor="#2292E1" />
+        </RelativeLayout>
+
+
+        <ProgressBar
+            android:id="@+id/hl_task_progress_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="50dp"
+            android:minWidth="200dp"
+            android:progress="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hl_task_status_image"
+            android:src="@drawable/search_normal"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

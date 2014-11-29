@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.boardinglabs.taskficien.HomeActivity"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:weightSum="1"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|right"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:id="@+id/header_month_number_tv"
+                android:textSize="12.03pt"
+                android:textColor="#0096ff"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="0dp"
+                android:gravity="bottom|right"
+                android:padding="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OCTOBER"
+                android:id="@+id/header_month_text_tv"
+                android:textSize="11.03pt"
+                android:textColor="#85bee6"
+                android:layout_toEndOf="@+id/header_month_number_tv"
+                android:layout_marginLeft="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14"
+                android:id="@+id/header_date_number_tv"
+                android:textSize="12.03pt"
+                android:textColor="#0096ff"
+                android:gravity="right|top"
+                android:textAlignment="gravity"
+                android:padding="0dp"
+                android:layout_gravity="left|top"
+                android:layout_below="@+id/header_month_number_tv"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="-6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:id="@+id/header_day_text_tv"
+                android:textSize="7.13pt"
+                android:textColor="#85bee6"
+                android:paddingTop="2dp"
+                android:layout_gravity="right"
+                android:layout_below="@+id/header_month_text_tv"
+                android:layout_toEndOf="@+id/header_month_number_tv"
+                android:layout_marginTop="-6dp"
+                android:layout_toRightOf="@+id/header_date_number_tv"
+                android:layout_marginLeft="4dp" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notif_button"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:background="@drawable/tf_front_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="162dp"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+
+    <com.boardinglabs.taskficien.utils.HorizontalPager
+        android:id="@+id/home_horizontal_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="0dp">
+
+    </com.boardinglabs.taskficien.utils.HorizontalPager>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="663px"
+    android:layout_height="wrap_content"
+    android:background="#ff71b4e2"
+    android:weightSum="663"
+    android:minWidth="663px">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/front_username_edit_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="7dp"
+        android:background="#ff3a9ce1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#ffffffff"
+        android:hint="Username"
+        android:textColorHint="#ffffffff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/front_password_edit_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="14dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:background="#ff3a9ce1"
+        android:textColor="#ffffffff"
+        android:hint="Password"
+        android:textColorHint="#ffffffff" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff00619b"></FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/lv_login_button"
+        android:layout_gravity="center_horizontal"
+        android:background="#00ffffff"
+        android:textColor="#ffffffff"
+        android:minHeight="45dp" />
+
+</LinearLayout>
